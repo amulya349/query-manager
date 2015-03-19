@@ -1,0 +1,16 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "A short snippet to implement a query for a microdatabase using nodejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amulya Kumar Sahoo",
+  "license": "ISC", 
+  "dependencies": {
+  	"express": "latest",
+  	"body-parser": "latest"
+  	
+  }
+}
