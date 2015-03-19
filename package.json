@@ -6,11 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/amulya349/query-manager.git"
+  },
   "author": "Amulya Kumar Sahoo",
   "license": "ISC", 
   "dependencies": {
-  	"express": "latest",
-  	"body-parser": "latest"
-  	
+  	"express": "latest"  	
   }
 }
