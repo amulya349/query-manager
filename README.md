@@ -8,3 +8,23 @@ Allow queries against any one of a number of a json files from a directory on th
 Allow queries using the query language defined in this package: https://github.com/PencilCode/jsonql.
 
 Return results as JSON.
+
+Usage:
+
+To run the server type : 
+
+```node app.js ```
+
+To query the DB:
+`URL/file?q=<queryString>`
+
+where, 
+URL is `localhost:8880/` (if running in localhost)
+`queryString` is the query with jsonql syntax
+
+To Create a DB(JSON File):
+`URL/createdb/<dbname>`
+
+
+To delete a DB:
+`URL/deletedb/<dbname>`

@@ -21,3 +21,27 @@ app.get('/:file', function(req, res) {
 		res.json(result);
 	})
 });
+
+//get method to create db
+app.get('/createdb/:dbName', function(req, res) {
+	data = {};
+	data.name = "Amulya Kumar Sahoo";
+	data.age = 21;
+	data.phone = "9556544754";
+
+	fs.writeFile(req.params.dbName+'.json', JSON.stringify(data), function(err) {
+		if(err)
+			res.send(err);
+		res.send("Successfully written to file: "+ req.params.dbName+'.json');
+	});
+});
+
+//get method to delete db
+app.get('/deletedb/:dbName', function(req, res){
+	fs.unlink(req.params.dbName+'.json', function(err){
+		if(err)
+			res.send(err);
+		res.status(200).send("File "+ req.params.dbName+".json successfully deleted")
+
+	})
+})
