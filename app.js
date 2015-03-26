@@ -17,8 +17,7 @@ app.get('/:file', function(req, res) {
 		var x = req.url.split('=');
 		var query = '$.'+x[1];
 		var result = jsonql(query, d);
-		//res.send(typeof(result));	
-		res.json(result);
+		res.send(JSON.stringify(result));
 	})
 });
 
