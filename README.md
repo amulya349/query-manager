@@ -1,3 +1,4 @@
+<pre>
 # query-manager
 The idea is to create a simple query-only database with an HTTP interface, using nodejs and jsonql.
 
@@ -19,7 +20,7 @@ To query the DB:
 `URL/file?q=<queryString>`
 
 where, 
-URL is `localhost:8880/` (if running in localhost)
+URL is `localhost:8880/` (if running in localhost) or `https://aqueous-shelf-3044.herokuapp.com/` (hosted online) <br>
 `queryString` is the query with jsonql syntax
 
 To Create a DB(JSON File):
@@ -28,3 +29,4 @@ To Create a DB(JSON File):
 
 To delete a DB:
 `URL/deletedb/<dbname>`
+</pre>

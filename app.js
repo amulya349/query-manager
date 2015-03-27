@@ -8,6 +8,14 @@ var path = require('path');
 app.listen(port);
 console.log('Listening at http://localhost:' + port);
 
+app.get('/', function(req, res) {
+	fs.readFile('README.md', 'utf8', function(err, data){
+		if(err)
+			return console.log(err);
+		res.send(data);
+	})
+});
+
 app.get('/:file', function(req, res) {
 	//function to read file and then process it
 	fs.readFile(req.params.file+'.json', 'utf8', function(err, data){
